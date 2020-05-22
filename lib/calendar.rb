@@ -8,11 +8,11 @@ require 'date'
 
    def initialize(days = DAYS)
      @days = days
-     @today = Date.new
+     @today = Date.today
      @calendar = []
    end
 
    def generate_calendar
-
+     @calendar = [{}, {}]
    end
  end
