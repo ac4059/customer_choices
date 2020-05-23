@@ -32,6 +32,10 @@ require 'calendar'
        expect(calendar.generate_calendar).to be_an_instance_of(Array)
      end
 
+     it 'should generate array DAYS in length' do
+     expect(calendar.generate_calendar.length).to eq(Calendar::DAYS)
+     end
+
    end
 
  end
