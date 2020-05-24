@@ -20,6 +20,7 @@ require 'calendar'
    end
 
    describe '#generate_calendar' do
+
      before do
        Timecop.freeze(2020, 02, 01)
      end
@@ -37,7 +38,7 @@ require 'calendar'
      end
 
      it 'should generate array with dates in hashes' do
-       date = { date: '2020', day: 'SAT', mday: 1 }
+       date = { date: '2020', mday: 1, day: 'SAT' }
        expect(calendar.generate_calendar).to include(date)
      end
 

@@ -29,8 +29,8 @@ require 'date'
      def create_hash(day)
        {
          date: day.strftime('%Y'),
-         day: day.strftime('%^a'),
-         mday: day.mday
+         mday: day.mday,
+         day: day.strftime('%^a')
        }
      end
  end
