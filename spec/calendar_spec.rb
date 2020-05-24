@@ -36,6 +36,11 @@ require 'calendar'
      expect(calendar.generate_calendar.length).to eq(Calendar::DAYS)
      end
 
-   end
+     it 'should generate array with dates in hashes' do
+       date = { date: '2020', day: 'SAT', mday: 1 }
+       expect(calendar.generate_calendar).to include(date)
+     end
+
+    end
 
  end
