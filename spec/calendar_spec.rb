@@ -38,7 +38,7 @@ require 'calendar'
      end
 
      it 'should generate array with dates in hashes' do
-       date = { date: '2020', mday: 1, day: 'SAT' }
+       date = { date: '2020', mday: 1, day: 'SAT', customer: [] }
        expect(calendar.generate_calendar).to include(date)
      end
 
