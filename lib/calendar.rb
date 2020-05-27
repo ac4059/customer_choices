@@ -30,6 +30,7 @@ require 'date'
        {
          date: day.strftime('%Y'),
          mday: day.mday,
+         month: day.strftime('%B'),
          day: day.strftime('%^a'),
          customer: []
        }
